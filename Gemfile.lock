@@ -41,6 +41,7 @@ GEM
     arel (7.1.4)
     bcrypt (3.1.11-x64-mingw32)
     builder (3.2.3)
+    cancancan (1.16.0)
     concurrent-ruby (1.0.4)
     devise (4.2.0)
       bcrypt (~> 3.0)
@@ -48,7 +49,7 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
-    devise_token_auth (0.1.39)
+    devise_token_auth (0.1.40)
       devise (> 3.5.2, <= 4.2)
       rails (< 6)
     erubis (2.7.0)
@@ -73,9 +74,9 @@ GEM
     nio4r (1.2.1)
     nokogiri (1.7.0.1-x64-mingw32)
       mini_portile2 (~> 2.1.0)
-    omniauth (1.4.2)
-      hashie (>= 1.2, < 4)
-      rack (>= 1.0, < 3)
+    omniauth (1.6.0)
+      hashie (>= 3.4.6, < 3.6.0)
+      rack (>= 1.6.2, < 3)
     orm_adapter (0.5.0)
     pg (0.19.0-x64-mingw32)
     puma (3.7.0)
@@ -132,7 +133,8 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  devise_token_auth (= 0.1.39)
+  cancancan (~> 1.16)
+  devise_token_auth
   jbuilder (~> 2.5)
   omniauth (~> 1.4)
   pg (~> 0.18)
